@@ -9,15 +9,15 @@ public class Promedio {
         int i, maximo = 0, minimo = 101;
         float promedio = 0;
         String nomaximo = "", nominimo = "";
-        String nombre[] = new String[3];
-        double notas[] = new double[3];
-        for (i = 0; i < 3; i++) {
+        String nombre[] = new String[6];
+        double notas[] = new double[6];
+        for (i = 0; i < 6; i++) {
             System.out.println("Digite los nombres del alumno");
             nombre[i] = entrada.next();
             System.out.println("Digite las notas");
             notas[i] = entrada.nextDouble();
-            promedio = ((float) (promedio + notas[i] / 3));
-            if (notas[i] > maximo) {
+            promedio = ((float) (promedio + notas[i] / 6));
+            if (notas[i] > maximo) { 
                 maximo = (int) notas[i];
                 nomaximo = nombre[i];
             }
